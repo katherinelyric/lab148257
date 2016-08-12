@@ -1,35 +1,25 @@
 package br.univel;
 
+import java.io.IOException;
+import java.io.Serializable;
+
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 @WebServlet
-public class Entrega extends HttpServlet{
+public class Entrega extends HttpServlet implements Serializable{
 
-	String endereco, veiculo, data;
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = -2486791807916208234L;
 
-	public String getEndereco() {
-		return endereco;
-	}
-
-	public void setEndereco(String endereco) {
-		this.endereco = endereco;
-	}
-
-	public String getVeiculo() {
-		return veiculo;
-	}
-
-	public void setVeiculo(String veiculo) {
-		this.veiculo = veiculo;
-	}
-
-	public String getData() {
-		return data;
-	}
-
-	public void setData(String data) {
-		this.data = data;
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		super.doGet(req, resp);
 	}
 
 

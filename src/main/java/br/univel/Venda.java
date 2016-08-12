@@ -1,32 +1,26 @@
 package br.univel;
 
+import java.io.IOException;
+import java.io.Serializable;
+
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 @WebServlet
-public class Venda extends HttpServlet {
+public class Venda extends HttpServlet implements Serializable {
 
-	Integer cod, item;
-	double valor;
-	public Integer getCod() {
-		return cod;
-	}
-	public void setCod(Integer cod) {
-		this.cod = cod;
-	}
-	public Integer getItem() {
-		return item;
-	}
-	public void setItem(Integer item) {
-		this.item = item;
-	}
-	public double getValor() {
-		return valor;
-	}
-	public void setValor(double valor) {
-		this.valor = valor;
-	}
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 8465947971949488162L;
 
-
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		super.doGet(req, resp);
+	}
 
 }
