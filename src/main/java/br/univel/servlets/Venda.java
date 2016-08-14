@@ -1,4 +1,4 @@
-package br.univel;
+package br.univel.servlets;
 
 import java.io.IOException;
 import java.io.Serializable;
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet
-public class Venda extends HttpServlet implements Serializable {
+public class Venda extends HttpServlet {
 
 	/**
 	 *
